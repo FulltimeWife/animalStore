@@ -5,6 +5,7 @@ const connectDB = require('./config/db');
 const productSchema = require('./models/productsSchema');
 
 connectDB();
+
 const importData = async () => {
     try {
         await productSchema.deleteMany({});
