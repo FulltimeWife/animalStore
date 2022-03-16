@@ -1,0 +1,2 @@
+npm i --save-dev nodemon concurrently
+cd frontend/ && npx create-react-app . 
