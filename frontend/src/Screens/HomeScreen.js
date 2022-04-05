@@ -1,7 +1,14 @@
 import "./HomeScreen.css";
 
 const HomeScreen = () => {
-  return <div className="homescreen"> Home Screen </div>;
+
+  return (
+    <div className="homescreen">
+      <h2 className="homescreen__title">Latest Products</h2>
+      <div className="homescreen__products">
+      </div>
+    </div>
+  );
 };
 
-export default HomeScreen
+export default HomeScreen;

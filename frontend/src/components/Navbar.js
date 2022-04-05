@@ -37,4 +37,4 @@ const Navbar = ({click}) => {
     )
 }
 
-export default Navbar
+export default Navbar;

@@ -5,8 +5,7 @@ const CartScreen = () => {
         <div className="cartscreen"> cartscreen
         <h2>aaaaa</h2>
         </div>
-        
     )
 }
 
-export default CartScreen
+export default CartScreen;
