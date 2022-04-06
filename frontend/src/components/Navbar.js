@@ -12,19 +12,17 @@ const Navbar = ({click}) => {
           </div>
           {/* links */}
           <ul className="navbar__links">
+          <li>
+              <Link to="/">
+                Shop
+              </Link>
+            </li>
             <li>
               <Link to="/cart" className = "cart__link">
 								<i className="fas fa-shopping-cart"></i>
                 <span>
-                Cart
-                <span className="cartlogo__badge">0</span>
+                Cart <span className="cartlogo__badge">0</span>
                 </span>
-                
-              </Link>
-            </li>
-						<li>
-              <Link to="/">
-                Shop
               </Link>
             </li>
         	</ul>

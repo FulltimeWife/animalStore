@@ -8,9 +8,11 @@ const Product = () => {
       <div className="product__info">
         <p className="info__name">Sleepy Panda</p>
         <p className="info__description">He's just a lil snoozer</p>
-        <p className="info__price">€345.99</p>
+        <p className="info__price">€999.99</p>
 
-        <Link to={`/product/${1}`} className="info__button"></Link>
+        <Link to={`/product/${1}`} className="info__viewbutton">Purchase</Link> 
+        <Link to={`/cart/${1}`} className="info__cartbutton"> <i className="fas fa-shopping-cart"></i> Add to Cart </Link>
+        
       </div>
     </div>
 }
