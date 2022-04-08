@@ -6,22 +6,21 @@ import { useDispatch, useSelector } from "react-redux";
 import { getProductDetails } from "../redux/actions/productActions";
 import { addToCart } from '../redux/actions/cartActions';
 
+
 const ProductScreen = ({history}) => {
     const [quantity, setQty] = useState(1);
     const dispatch = useDispatch();
 
     const productDetails = useSelector((state) => state.getProductDetails);
-    const { loading, error, product } = productDetails;
+    const { product } = productDetails;
 
     let { id } = useParams()
 
     useEffect(() => {
-        console.log(`getProductDetails: ${JSON.stringify(dispatch(getProductDetails(id)))}`)
-        console.log(`Product: ${JSON.stringify(productDetails)}`)
-        if(product && id !== product._id) {
-            dispatch(getProductDetails(id))
-        }
-    }, [])
+        console.log(typeof(id))
+        console.log((id).length)
+        dispatch(getProductDetails(id))
+    }, [dispatch, id, productDetails])
 
     const addToCartHandler = () => {
         dispatch(addToCart(product._id, quantity));
