@@ -1,0 +1,5 @@
+Implement a cart (tie the cart to the user, user logs in via API with JWT auth perhaps)
+
+Create a CRUD API.
+
+Implement JWT Authentication.
