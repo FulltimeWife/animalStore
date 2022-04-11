@@ -11,7 +11,7 @@ const Product = ({name, description, price, productImageUrl, productId }) => {
         <p className="info__price">Price: €{price}</p>
 
         <Link to={`/product/${productId}`} className="info__viewbutton">Purchase</Link> 
-        <Link to={`/cart/${1}`} className="info__cartbutton"> <i className="fas fa-shopping-cart"></i> Add to Cart </Link>
+        <Link to={`/cart/`} className="info__cartbutton"> <i className="fas fa-shopping-cart"></i> Add to Cart </Link>
         
       </div>
     </div>

@@ -5,12 +5,14 @@ import { composeWithDevTools } from "redux-devtools-extension";
 
 //Import all of the reducers.
 import {
-  getAllProductsReducer
+  getAllProductsReducer,
+  getProductByIdReducer
 } from "./reducers/productReducers"
 
 //Tree
 const reducer = combineReducers({
-  getAllProducts: getAllProductsReducer
+  getAllProducts: getAllProductsReducer,
+  getProductById: getProductByIdReducer
 });
 
 const middleware = [thunk];

@@ -21,3 +21,25 @@ export const getAllProductsReducer = (state = { allProducts: [] }, action) => {
       return state;
   }
 };
+
+export const getProductByIdReducer = (state = { productById: [] }, action) => {
+  switch (action.type) {
+    case actionTypes.getProductByIdRequest:
+      return {
+        loading: true,
+        productById: [],
+      };
+    case actionTypes.getProductByIdSuccess:
+      return {
+        loading: false,
+        productById: action.payload,
+      };
+    case actionTypes.getProductByIdFailure:
+      return {
+        loading: false,
+        error: action.payload,
+      };
+    default:
+      return state;
+  };
+};
