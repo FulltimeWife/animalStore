@@ -25,6 +25,7 @@ const HomeScreen = () => {
         ) : (
           allProducts.map((product) => (
             <Product
+              //Maybe sort this by type of animal? would need another entry in the DB for animalType = "panda", then sort based on group perhaps?
               key={product._id}
               name={product.name}
               description={product.description}
